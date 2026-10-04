@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0 0 16px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 18px;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #444;
+}
+
+#gridInfo {
+    margin: 4px 0 16px;
+    color: #666;
+}
+
+#container {
+    width: min(960px, 90vw);
+    height: min(960px, 90vw);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background: #000;
+    overflow: hidden;
+}
+
+.grid-square {
+    flex: 0 0 auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    opacity: 1;
+}
